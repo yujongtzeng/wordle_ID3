@@ -79,10 +79,10 @@ class entropy:
  
 
 # For print out the best first guesses and their entropy               
-#import read_data            
-#filters = read_data.readtxt('../data/Allowed_words.txt')
-#answers = read_data.readtxt('../data/Possible_answers.txt')
-#filters.extend(answers)              
+import read_data            
+filters = read_data.readtxt('../data/Allowed_words.txt')
+answers = read_data.readtxt('../data/Possible_answers.txt')
+filters.extend(answers)              
 
-#test = entropy(filters, filters)
-#test.printEntropy('../data/best_words.json')
+en_test = entropy(filters, answers)
+en_test.printEntropy('../data/best_words.json')
