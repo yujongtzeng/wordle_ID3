@@ -8,6 +8,11 @@ The idea is motivated by the following two vidoes by 3Blue1Brown but the code wa
 * [Oh, wait, actually the best Wordle opener is not “crane”…](https://www.youtube.com/watch?v=fRed0Xmc2Wg)
 
 
+## How to use
+Class entropy can take two list of strings (guessable words, possible answers) and compute the information gain (entropy) for using words in guessable words to make a guess in the wordle game. It also computes the remaining possible answers after this guess by patterns. 
+
+A quick reference for the best first guess (only consider one step) is in "data/best_words.json", from the best to the worst. 
+
 ## Clarification and Note
 The first video by 3Blue1Brown made a mistake in computing the matching patterns if words has repeated letters (for example 'grebe' with 'crane'). 
 The second 'e' in 'grebe' shoould not be counted as yellow, it's a black. As a result, the numbers in the first video might be incorrect. 
