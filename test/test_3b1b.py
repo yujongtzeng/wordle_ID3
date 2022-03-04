@@ -70,7 +70,8 @@ class test_3b1b:
 
 
 test = test_3b1b()
-result = test.testEntropy(test.filters, test.filters)       
+#result = test.testEntropy(test.filters, test.filters)       
+result = test.testEntropy(test.filters, test.answers) 
 
 
     
